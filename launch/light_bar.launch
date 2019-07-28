@@ -1,0 +1,8 @@
+<launch>
+  	<node pkg="rosserial_python"
+  		  name="light_bar_serial"
+  		  type="serial_node.py">
+    	<param name="port" value="/dev/light_bar"/>
+    	<param name="baud" value="57600"/>
+  	</node>
+</launch>
